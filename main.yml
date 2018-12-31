@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: Update apt-get
+      apt:
+        update_cache: yes
